@@ -4,8 +4,6 @@ include_once './config.php';
 
 $kode_dokter = $_GET["kode_dokter"];
 
-// echo $kode_dokter;
-
 $sql = mysqli_query($conn, "DELETE FROM `tb-dokter` WHERE kode_dokter = $kode_dokter");
 
 if ($sql) {
